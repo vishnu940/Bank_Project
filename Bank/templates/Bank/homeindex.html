@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+<head>
+<title>Bank app</title>
+<link rel="stylesheet" type="text/css" href="{%static 'css/style.css'%}">
+</head>
+<body>
+<header>
+<div class="main">
+</div>
+<ul>
+<li class="active"><a href="#">Home</a></li>
+<li><a href="{%url 'about'%}">About Us</a></li>
+<li><a href="{%url 'contact'%}">Contact</a></li>
+<li><a href="{%url 'loans'%}">Home Loans</a></li>
+<li><a href="{%url 'card'%}">Credit Card</a></li>
+<li><a href="{%url 'loans'%}">Personal Loans</a></li>
+<li><a href="#">Help</a></li>
+</ul>
+
+<div class="button">
+<a href="{%url 'login'%}" class="btn">Login</a>
+<a href="{%url 'register'%}" class="btn">Register</a>
+</div>
+</header>
+</body>
+</html> 

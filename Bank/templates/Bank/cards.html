@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static 'css/loan.css'%}">
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="cl">
+                <h3>Apply For Credit Card</h3>
+            <form method="post" action="">
+                {%csrf_token%}
+                {{form.as_p}}
+               <div class="btn">
+                   <input type="submit" class="btn btn-success" value="Apply">
+                   <a href="{%url 'index'%}" class="btn btn-primary">Back</a>
+               </div>
+            </form>
+        </div>
+            </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+</body>
+</html>

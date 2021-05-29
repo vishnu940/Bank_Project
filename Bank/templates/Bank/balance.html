@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{%extends "Bank/home.html"%}
+{%block body_block%}
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="trs">
+                <div class="card text-center">
+                    <div class="bgr">
+                    <div class="card-header">
+                        View Balance
+                    </div>
+                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Available Account Balance</h5>
+                        <p class="card-text">Account Type: {{balance.ac_type}}</p>
+                        <p class="card-text">Account Number: {{balance.account_number}}</p>
+                        <p class="card-text">Available Balance: {{balance.balance}}</p>
+                        <a href="{%url 'home'%}" class="btn btn-primary">Ok</a>
+                    </div>
+                    <div class="bgr">
+                    <div class="card-footer text-muted">
+
+                    </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+
+
+
+{%endblock%}

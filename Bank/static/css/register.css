@@ -1,0 +1,17 @@
+body{
+background-color:#f0f2f5;
+}
+.rg{
+background-color:#FFF;
+position:relative;
+top:100px;
+}
+h2{
+text-align:center;
+background-color:#ae2626;
+color:#FFF;
+}
+.btn{
+position:relative;
+top:2px;
+}
